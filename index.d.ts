@@ -27,7 +27,7 @@ export function checkPermission(): Promise<
   "authorized" | "denied" | "undefined"
 >;
 export function requestPermission(): Promise<
-  "authorized" | "denied" | "undefined"
+    "authorized" | "denied" | "limited" | "undefined" 
 >;
 export function writePhotoToPath(
   contactId: string,
